@@ -266,7 +266,7 @@ void BST<T>::remove(BSTNode<T>* node)
 }
 
 
-//Driver code.
+//Driver code for BST class.
 int main()
 {
     BST<int> bt;
