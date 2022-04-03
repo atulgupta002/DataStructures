@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+//BST node class definition.
 template <class T>
 class BSTNode
 {
@@ -31,6 +33,8 @@ class BSTNode
     template<class U>friend class BST;
 };
 
+
+//BST class definition.
 template <class T>
 class BST
 {
@@ -60,6 +64,8 @@ class BST
     void remove(BSTNode<T>* node);
 };
 
+
+//Function to insert new data into the BST.
 template <class T>
 void BST<T>::insert(T newData)
 {
@@ -94,6 +100,7 @@ void BST<T>::insert(T newData)
     }
 }
 
+//In order traversal of the BST.
 template <class T>
 void BST<T>::traverseInOrder(BSTNode<T>* node)
 {
@@ -105,6 +112,7 @@ void BST<T>::traverseInOrder(BSTNode<T>* node)
     }
 }
 
+//Pre order traversal of the BST.
 template <class T>
 void BST<T>::traversePreOrder(BSTNode<T>* node)
 {
@@ -116,6 +124,7 @@ void BST<T>::traversePreOrder(BSTNode<T>* node)
     }
 }
 
+//Post order traversal of the BST.
 template <class T>
 void BST<T>::traversePostOrder(BSTNode<T>* node)
 {
@@ -127,6 +136,7 @@ void BST<T>::traversePostOrder(BSTNode<T>* node)
     }
 }
 
+//Queue based level order traversal of the BST.
 template <class T>
 void BST<T>::traverseLevelOrder(int level)
 {
@@ -161,6 +171,7 @@ void BST<T>::traverseLevelOrder(int level)
     }
 }
 
+//Function to calculate the height of a particular node.
 template <class T>
 int BST<T>::height(BSTNode<T>* node)
 {
@@ -182,6 +193,8 @@ int BST<T>::height(BSTNode<T>* node)
     return (leftHeight >= rightHeight) ? leftHeight+1 : rightHeight+1;
 }
 
+
+//Function to remove a node from the BST.
 template <class T>
 void BST<T>::remove(BSTNode<T>* node)
 {
@@ -252,6 +265,8 @@ void BST<T>::remove(BSTNode<T>* node)
     }
 }
 
+
+//Driver code.
 int main()
 {
     BST<int> bt;
