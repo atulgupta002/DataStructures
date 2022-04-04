@@ -198,8 +198,6 @@ int BST<T>::height(BSTNode<T>* node)
 template <class T>
 void BST<T>::remove(BSTNode<T>* node)
 {
-    //3 cases: no child, 1 child, 2 children.
-
     //Case 1: no child
     if(node->left != nullptr && node->right != nullptr)
     {
