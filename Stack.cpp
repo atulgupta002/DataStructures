@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+//Stack class definition.
 template <class T>
 class Stack
 {
